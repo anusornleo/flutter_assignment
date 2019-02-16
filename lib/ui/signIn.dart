@@ -37,7 +37,7 @@ class SignInFormState extends State<SignInForm> {
                     hintText: "Plaease input you email",
                     hintStyle: TextStyle(color: Colors.blue[200]),
                     prefixIcon: Icon(
-                      Icons.person,
+                      Icons.mail,
                       color: Colors.blue,
                     ),
                   ),
