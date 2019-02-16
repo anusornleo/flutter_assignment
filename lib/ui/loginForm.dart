@@ -2,13 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_assignment/ui/mainHome.dart';
 import 'package:flutter_assignment/ui/signin.dart';
 
-
-
-
 class LoginForm extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return LoginFormState();
   }
 }
@@ -51,7 +47,7 @@ class LoginFormState extends State<LoginForm> {
             ),
             Builder(
               builder: (context) => RaisedButton(
-                  child: Text('Login'),
+                  child: Text('LOGIN'),
                   onPressed: () {
                     if (_user.text != 'admin' && _password.text != 'admin') {
                       Scaffold.of(context).showSnackBar(SnackBar(
@@ -71,16 +67,6 @@ class LoginFormState extends State<LoginForm> {
                     }
                   }),
             ),
-            // Builder(
-            //   builder: (context) => RaisedButton(
-            //       child: Text('Show Snackbar'),
-            //       onPressed: () {
-            //         Scaffold.of(context).showSnackBar(SnackBar(
-            //           content: Text('Show Snackbar'),
-            //           duration: Duration(seconds: 3),
-            //         ));
-            //       }),
-            // ),
             Align(
               alignment: Alignment.centerRight,
               child: ButtonTheme(

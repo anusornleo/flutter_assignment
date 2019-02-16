@@ -3,9 +3,6 @@ import 'package:flutter_assignment/ui/loginForm.dart';
 import 'package:flutter_assignment/ui/mainHome.dart';
 import 'package:flutter_assignment/ui/signIn.dart';
 
-
-
-
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -19,7 +16,6 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.blue,
         accentColor: Colors.blue,
       ),
-      // home: MyHomePage(),
       initialRoute: "/",
       routes: {
         "/": (context) => LoginForm(),
@@ -28,7 +24,4 @@ class MyApp extends StatelessWidget {
       },
     );
   }
-}
-
-class Home {
 }

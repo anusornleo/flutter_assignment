@@ -31,13 +31,15 @@ class SignInFormState extends State<SignInForm> {
                   controller: _email,
                   decoration: InputDecoration(
                     enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(color: Colors.blue)
-                    ),
+                        borderSide: BorderSide(color: Colors.blue)),
                     labelText: "Email",
                     labelStyle: TextStyle(color: Colors.blue),
                     hintText: "Plaease input you email",
                     hintStyle: TextStyle(color: Colors.blue[200]),
-                    prefixIcon: Icon(Icons.person,color: Colors.blue,),
+                    prefixIcon: Icon(
+                      Icons.person,
+                      color: Colors.blue,
+                    ),
                   ),
                   keyboardType: TextInputType.emailAddress,
                 ),
@@ -46,13 +48,12 @@ class SignInFormState extends State<SignInForm> {
                   controller: _password,
                   decoration: InputDecoration(
                     enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(color: Colors.blue)
-                    ),
+                        borderSide: BorderSide(color: Colors.blue)),
                     labelText: "Password",
                     labelStyle: TextStyle(color: Colors.blue),
                     hintText: "Plaease input you Password",
                     hintStyle: TextStyle(color: Colors.blue[200]),
-                    prefixIcon: Icon(Icons.lock,color: Colors.blue),
+                    prefixIcon: Icon(Icons.lock, color: Colors.blue),
                   ),
                   keyboardType: TextInputType.text,
                   obscureText: true,
@@ -62,21 +63,23 @@ class SignInFormState extends State<SignInForm> {
                   controller: _cpassword,
                   decoration: InputDecoration(
                     enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(color: Colors.blue)
-                    ),
+                        borderSide: BorderSide(color: Colors.blue)),
                     labelText: "Password",
                     labelStyle: TextStyle(color: Colors.blue),
                     hintText: "Plaease input you Password",
                     hintStyle: TextStyle(color: Colors.blue[200]),
-                    prefixIcon: Icon(Icons.lock,color: Colors.blue),
+                    prefixIcon: Icon(Icons.lock, color: Colors.blue),
                   ),
                   keyboardType: TextInputType.text,
                   obscureText: true,
                 ),
                 Builder(
                   builder: (context) => RaisedButton(
-                    color: Theme.of(context).accentColor,
-                      child: Text("CONTINUE",style: TextStyle(color: Colors.white),),
+                      color: Theme.of(context).accentColor,
+                      child: Text(
+                        "CONTINUE",
+                        style: TextStyle(color: Colors.white),
+                      ),
                       onPressed: () {
                         if (_email.text == 'admin') {
                           print("admin");

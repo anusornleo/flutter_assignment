@@ -57,13 +57,10 @@ class MainHome extends StatelessWidget {
           ],
         ),
         bottomNavigationBar: new Material(
-          // set the color of the bottom navigation bar
           color: Colors.blue,
-          // set the tab bar as the child of bottom navigation bar
           child: new TabBar(
             tabs: <Tab>[
               new Tab(
-                // set icon to the tab
                 icon: new Icon(Icons.view_quilt),
               ),
               new Tab(
@@ -79,7 +76,6 @@ class MainHome extends StatelessWidget {
                 icon: new Icon(Icons.settings),
               ),
             ],
-            // setup the controller
           ),
         ),
       ),
