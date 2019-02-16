@@ -60,10 +60,7 @@ class LoginFormState extends State<LoginForm> {
                         duration: Duration(seconds: 3),
                       ));
                     } else {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => MainHome()));
+                      Navigator.pushReplacementNamed(context, "/home");
                     }
                   }),
             ),
